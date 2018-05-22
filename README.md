@@ -17,3 +17,21 @@ do
 fi
 done
 
+##I am adding anothere example of for loop on this repo. 
+# by this program we can find out  which is directory and which one is a file in a specific Directory.
+#!/bin/bash
+cd ~ 
+for i in * 
+do 
+if [ -f  $i ]
+then
+ {
+ echo "$i is a file"
+ }
+ elif [ -d  $i ]
+ then
+ {
+ echo "$i is a directory."
+ }
+ fi
+ done
